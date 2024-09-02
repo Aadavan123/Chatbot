@@ -1,0 +1,34 @@
+.chat-interface {
+  padding: 20px;
+  color: #333;
+}
+
+.chat-interface.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-info {
+  margin-top: 20px;
+}
+
+.chat-buttons {
+  margin-top: 20px;
+}
+
+.chat-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  padding: 5px 10px;
+  cursor: pointer;
+}

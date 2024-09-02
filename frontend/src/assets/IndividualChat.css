@@ -1,0 +1,64 @@
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--header-bg-color);
+  }
+  
+  .chat-theme-toggle {
+    cursor: pointer;
+  }
+  
+  /* Chat Sidebar */
+  .chat-sidebar {
+    width: 25%;
+    background-color: var(--sidebar-bg-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .chat-sidebar.hidden {
+    transform: translateX(-100%);
+  }
+  
+  .chat-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .chat-sidebar-content {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  /* Chat Main */
+  .chat-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .chat-send-button, .chat-upload-button {
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  

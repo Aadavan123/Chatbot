@@ -1,0 +1,84 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+/* Ensure Font Awesome icons are included in your HTML or JSX */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.login-container {
+  background-image: url('/assets/login-background.jpg'); /* Place your image in the public/assets directory */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  color: #ff5722; /* Contrasting color for title */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.login-form input {
+  width: calc(100% - 1.5rem); /* Ensure full width with padding consideration */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+ .login-container .submit-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ .login-container .submit-button:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+}
+
+.error-message {
+  color: #e53935; /* Error color */
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}

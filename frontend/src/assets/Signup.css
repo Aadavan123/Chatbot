@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+.signup-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.signup-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%); /* Darkens the video for better text contrast */
+}
+
+.signup-form-wrapper {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  z-index: 1;
+}
+
+.signup-title {
+  font-size: 2.5rem;
+  color: #55c9f0; /* Contrasting color for title */
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signup-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.signup-form input {
+  width: calc(100% - 1.5rem);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #5ec7ea;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #63c4e5;
+  color: black;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #b3e0ff; /* Lighten on hover */
+  transform: translateY(-3px);
+}
+
+.error-message {
+  color: #e53935; /* Error color */
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
